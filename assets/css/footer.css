@@ -1,0 +1,16 @@
+#bottom{
+    clear: both;
+    width: 100%;
+}
+
+#footer{
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    border-top: 5px  #4aaaa5 solid;
+    background: #666666;
+    text-align: center;
+    color: white;
+    font-size: 20px;
+    width: 100%;
+}
