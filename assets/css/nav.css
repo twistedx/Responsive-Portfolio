@@ -43,6 +43,7 @@ a {
 
 }
 .stuff {
+    margin: auto;
     position: relative; 
     float: right;
     margin-top: 25px; 
@@ -51,61 +52,58 @@ a {
 .stuff a:last-child{
     border-right: 0;}
 
-@media screen and (min-width: 400px) and (max-width: 767px) {
+@media screen and (min-width: 400px) and (max-width: 640px) {
 
-    #top{
-      /* Box-model */
-      width: 100%;
-        
-    }
-    .stuff{
-        float: left;    
-    }
-    #navigation{
-      width: 700px;
-      height: 64px;  
-    }
-    h1{
-    font-size: 16px;
-    }
-    a { 
-    font-size: 14px;
-   padding: 2px;
-   padding-right: 3px;
-   margin-right: 0px;
-
-   /* margin:10px ; */
-   border-right: 1px solid;
-
-    }
+   #name{
+       width:100%;
+   }
+   #navigation{
+    width: 100%;
+    height: 130px;
+    margin: 0 auto; 
   }
-    @media screen and (min-width: 768px) and (max-width: 1024px) {
+.stuff{
+    clear: both;
+    overflow: auto;
+    float: left;
+    margin: auto;
+    height: 75px;
+    text-align: center;    
+    }
+
+    a {
+       font-size: 16px;
+       padding: 5px;
+       padding-right: 10px;
+       margin-right: 10px;
+       border-right: 1px solid;
+      }
+  }
+
+  @media screen and (min-width: 641px) and (max-width: 980px) {
 
         #top{
-            /* Box-model */
+             
             width: 100%;
-              
-          }
+        }
+
           .stuff{
-              float: right;    
+              float: right; 
           }
-          #navigation{
-            width: 700px;
-            height: 64px;  
-          }
-          h1{
+
+        h1{
           font-size: 16px;
           }
-          a { 
+
+        a { 
           font-size: 16px;
          padding: 5px;
          padding-right: 10px;
          margin-right: 10px;
-      
-         /* margin:10px ; */
-         border-right: 1px solid;
-      
-          }
+         border-right: 1px solid;      
+        }
     
 }
+@media screen and (max-width: 980px) {
     
+} 

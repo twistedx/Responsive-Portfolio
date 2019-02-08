@@ -43,15 +43,13 @@ h2 {
     padding: 10px;
 }
 
-@media screen and (min-width: 400px) and (max-width: 767px) {
-
-  
+@media screen and (max-width: 640px) {
   #mainContent{
     /* Box-model */
     width: 100%;
   }
 }
-  @media screen and (min-width: 768px) and (max-width: 1024px) {
+  @media screen and (max-width: 768) {
   
     /* The wrapper's width will be 600px */
     .wrapper {
@@ -62,5 +60,18 @@ h2 {
     width: 100%;
   
   }
+
 }
+@media screen and (max-width: 980px) {
   
+  /* The wrapper's width will be 600px */
+  .wrapper {
+    width: 100%;
+  }
+  #mainContent{
+  /* Box-model */
+  width: 100%;
+
+}
+
+}
