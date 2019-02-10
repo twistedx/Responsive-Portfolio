@@ -65,8 +65,8 @@ a {
 .stuff{
     clear: both;
     overflow: auto;
-    posiion
-    float: left;
+    position: relative;
+    float: none;
     margin: auto;
     height: 75px;
     text-align: center;    
@@ -80,21 +80,65 @@ a {
        border-right: 1px solid;
       }
   }
+  @media screen and (min-width: 641px) and (max-width: 750px) {
 
-  @media screen and (min-width: 641px) and (max-width: 980px) {
+    #top{
+         
+        width: 100%;
+    }
+
+    #navigation{
+        width: 100%;
+        margin: 0 auto; 
+        height: 70px; 
+    }
+      .stuff{
+          float: right;
+
+      }
+
+    h1{
+        font-size:20px;
+        margin-top: 0;
+        margin-left: 0;
+        background: #4aaaa5; 
+        color: white;
+        text-align: center;
+        padding: 20px;
+    }
+
+    a { 
+      font-size: 16px;
+     padding: 5px;
+     padding-right: 10px;
+     margin-right: 10px;
+     border-right: 1px solid;      
+    }
+
+}
+  @media screen and (min-width: 751px) and (max-width: 980px) {
 
         #top{
              
             width: 100%;
         }
 
+        #navigation{
+            width: 100%;
+            margin: 0 auto; 
+        }
           .stuff{
-              float: right; 
+              float: right;
           }
 
         h1{
-          font-size: 16px;
-          }
+            margin-top: 0;
+            margin-left: 0;
+            background: #4aaaa5; 
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
 
         a { 
           font-size: 16px;
@@ -105,6 +149,3 @@ a {
         }
     
 }
-@media screen and (max-width: 980px) {
-    
-} 
